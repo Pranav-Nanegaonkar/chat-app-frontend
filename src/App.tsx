@@ -14,7 +14,7 @@ import { Toaster } from "react-hot-toast";
 import Test from "./pages/Test";
 import ProtectedRoute from "./components/ProtectedRoute";
 const App: React.FC = () => {
-  const { checkAuth, onlineUsers } = useAuthStore();
+  const { checkAuth } = useAuthStore();
   const { theme } = useThemeStore();
   useEffect(() => {
     checkAuth();
