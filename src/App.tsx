@@ -21,7 +21,7 @@ const App: React.FC = () => {
   }, []);
 
 
-  console.log(onlineUsers);
+  // console.log(onlineUsers);
 
 
   // if (isCheckingAuth && authUser === null) {
