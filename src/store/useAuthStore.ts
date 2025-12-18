@@ -173,7 +173,7 @@ export const useAuthStore = create<StoreTypes>()(
         await api.post("/auth/logout");
 
         set({ authUser: null });
-        toast.success("Logged out successfully");
+        // toast.success("Logged out successfully");
 
         get().disconnectSocket();
         return { success: true };

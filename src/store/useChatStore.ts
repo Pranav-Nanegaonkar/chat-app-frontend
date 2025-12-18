@@ -55,6 +55,7 @@ export const useChatStore = create<ChatStoreTypes>((set, get) => ({
   messages: [],
   users: [],
   selectedUser: null,
+  setSelectedUser: (selectedUser) => set({ selectedUser }),
   isUsersLoading: false,
   isMessagesLoading: false,
 
@@ -145,5 +146,5 @@ export const useChatStore = create<ChatStoreTypes>((set, get) => ({
   },
 
  
-  setSelectedUser: (selectedUser) => set({ selectedUser }),
+  
 }));
