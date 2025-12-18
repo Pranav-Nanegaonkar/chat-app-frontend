@@ -56,7 +56,7 @@ api.interceptors.response.use(
           console.log("⛔ Refresh token expired → redirecting to login...");
 
           // FORCE LOGOUT → Redirect to login page
-          // window.location.href = "/login";
+          window.location.href = "/login";
         }
 
         console.log("ResponseInterceptor:", refreshErr);
